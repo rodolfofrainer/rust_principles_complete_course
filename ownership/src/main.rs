@@ -31,12 +31,10 @@
 // }
 
 // RUST PRINCIPLES - COPY
-
+//copy is implemented items already on stack 
 fn main(){
-    let x = vec!["Tyler".to_string()];
-    let y = x.clone();
-    let z = y.clone();
-    println!("{:?}", x);
-    println!("{:?}", y);
-    println!("{:?}", z);
+    let x = 1;
+    let y = x;
+    println!("x={}, y={}", x,y);
+
 }

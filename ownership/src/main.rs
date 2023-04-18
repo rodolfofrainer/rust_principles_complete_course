@@ -65,11 +65,21 @@ fn main(){
                             // main.rs(58, 24): consider cloning the value if the performance cost is acceptable: `.clone()`
                             // main.rs(56, 24): consider cloning the value if the performance cost is acceptable: `.clone()`
 
-    let mut str1 = String::from("Tyler");
-    let mut str2:String;
-    loop{
-        str2 = str1; 
-    }
+    // let mut str1 = String::from("Tyler");
+    // let mut str2:String;
+    // loop{
+    //     str2 = str1; 
+    // }
+
+
+    let mut s = String::from("hello");
+    change_string(&mut s);
+    println!("{}", s);
+
+}
+
+fn change_string(some_string: &mut String){
+    some_string.push_str(", world");
 }
 
 // fn takes_ownership(s:String){

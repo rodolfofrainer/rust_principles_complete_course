@@ -72,15 +72,45 @@ fn main(){
     // }
 
 
-    let mut s = String::from("hello");
-    change_string(&mut s);
-    println!("{}", s);
+    // let mut s = String::from("hello");
+    // change_string(&mut s);
+    // println!("{}", s);
+
+
+    //          1
+    // let mut vec = vec![1,3,5,7];
+    // println!("{:?}", foo(&vec));
+    // vec.push(15);
+    // println!("{:?}", vec);
+
+
+    //        2
+    // let mut value = 10;
+    // println!("{:?}",add_two(value));
+    // value = 8;
 
 }
 
-fn change_string(some_string: &mut String){
-    some_string.push_str(", world");
-}
+// Assignment
+
+//          1
+// fn foo(val: &Vec<i8>) -> bool{
+//     if val[0] == 1{
+//         true
+//     } else {
+//         false
+//     }
+// }
+
+
+//           2
+// fn add_two(val:i8){
+//     val+2;
+// }
+
+// fn change_string(some_string: &mut String){
+//     some_string.push_str(", world");
+// }
 
 // fn takes_ownership(s:String){
 //     let strin = s;
